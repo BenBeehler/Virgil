@@ -1,2 +1,2 @@
 # Virgil
-A minimalist c/c++ web browser primarily for GNU/Linux systems
+A minimalist C web browser primarily for GNU/Linux systems
