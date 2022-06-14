@@ -1,5 +1,5 @@
 ## Virgil
-Virgil is a a minimalist C web browser primarily for GNU/Linux systems. The internet may as well be prefaced with "Abandon all hope, ye who enter here," but having a good guide is always helpful.
+Virgil is a a minimalist C web browser primarily built for GNU/Linux systems. The internet may as well be prefaced with "Abandon all hope, ye who enter here," but having a good guide is always helpful.
 
 Virgil is still in an early stage of development; it is currently missing fundamental features.
 
