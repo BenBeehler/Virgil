@@ -1,12 +1,12 @@
-## Virgil
+# Virgil
 Virgil is a a minimalist C web browser primarily built for GNU/Linux systems. The internet may as well be prefaced with "Abandon all hope, ye who enter here," but having a good guide is always helpful.
 
-Virgil is still in an early stage of development; it is currently missing fundamental features.
+Virgil is still in an early stage of development; it is currently missing many fundamental features.
 
-# Dependencies
-Building Virgil specifically requires Gtk3 and GtkWebkit2. A few small modifications to the latter library may be required in order to run the build script.
+## Dependencies
+Building Virgil specifically requires the Gtk3 and GtkWebkit2 libraries. A few small modifications to the latter library may be required in order to run the build script. CMake is currently unavailable for this project. Compile the basic binary using `build.sh`.
 
-# Why Virgil
+## Why Virgil
 Virgil will serve two purposes: 
 1. Serve the role of a resource-lite, minimalist, and customizable GNU/Linux web browser, specficially for WM environments.
 2. Serve as a project to refine my practice with the C programming language.
