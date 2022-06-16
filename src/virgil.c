@@ -3,16 +3,17 @@
 #include <stdlib.h>
 #include <webkit2/webkit2.h>
 
-void init();
+struct VirgilWindow {
+  GtkWidget *window;
+  GtkWidget *web;
+};
 
 /*
 Initialize base window.
 */
-int main(int argc, char *argv[]) {
+void init(struct VirgilWindow *vwindow) {
   GtkWidget *window;
   GtkWidget *web;
-
-  gtk_init(&argc, &argv);
 
   web = webkit_web_view_new();
   window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
@@ -24,7 +25,21 @@ int main(int argc, char *argv[]) {
 
   webkit_web_view_load_uri(WEBKIT_WEB_VIEW(web), "https://duckduckgo.com");
 
-  gtk_widget_show_all(window);
+  vwindow->window = window;
+  vwindow->web = web;
+}
+
+/*
+Render Virgil window
+*/
+int main(int argc, char *argv[]) {
+  gtk_init(&argc, &argv);
+
+  struct VirgilWindow main;
+
+  init(&main);
+
+  gtk_widget_show_all(main.window);
   gtk_main();
 
   return 0;
